@@ -1,11 +1,11 @@
-baseurl = "http://localhost:1313/"
+baseurl = "https://carajam.netlify.com/"
 languageCode = "en-us"
 title = "#carajam"
 theme = "strange-case"
-description = "A Hugo Theme built with Bootstrap"
+description = "We are touring around europe with our caravan and organising "
 
 [params]
     DateFormat = "2 Jan 2006"
     description = "Save the handmade music"
-    sidebarDescription = "A Hugo Theme built with Bootstrap"
-    sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
+    sidebarDescription = "Save the handmade music"
+    sidebarFreeText = "A Piano, a camping car and a big tour through europe."
