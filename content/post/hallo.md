@@ -1,9 +1,13 @@
 +++
 date = "2016-09-14"
 draft = false
-title = "hallo"
+title = "E2O kitchen Jam"
 
 +++
 
-sdfsdf
-qsdkljqsdkl
+
+   <object class="embed-responsive-item">
+     <video controls>
+       <source src="/img/R2O_kitchenJam.mp4" />
+     </video>
+   </object>
