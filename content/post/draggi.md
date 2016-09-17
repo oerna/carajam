@@ -15,4 +15,4 @@ title = "schwenken sur la coline"
    </object>
 </div> 
 
-The search begins, without a piano but with an accordion, I found two musicians willing to play.
+The search begins, without a piano but with an accordion, I found two musicians willing to play. [Alexandre Telliez-Moreni](http://www.toolongrecords.com/elbotcho) and [Bennoit Bottex](http://benoitbottex.fr/)
