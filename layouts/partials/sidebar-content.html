@@ -2,11 +2,11 @@
 	<div class="sidebar-content">
 
 		<a href="{{ .Site.BaseURL }}"><h1>#{{ .Site.Title }}</h1></a>
-		<p>{{ .Site.Params.description }}</p>
+		<small><p>{{ .Site.Params.description }}</p></small>
 
 		{{ if .Site.Params.sidebarFreeText }}
 		<div class="sidebar-freetext">
-			<p>{{ .Site.Params.sidebarFreeText }}</p>
+			<small><p>{{ .Site.Params.sidebarFreeText }}</p></small>
 		</div>
 		{{ end }}
 
@@ -22,7 +22,7 @@
 				{{ end }}	
 		</div>
 
-		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
-        <p class="attr">Powered by we will see ;)</p>
+		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&#9835; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
+        <p class="attr"></p>
 
 	</div>
