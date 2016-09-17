@@ -13,6 +13,6 @@ tags = ["gibsysound", "refugeentredeuxeaux"]
        <source src="/img/R2O_kitchenJam.mp4" />
      </video>
    </object>
-   </div>   
+</div>   
    
    Spontanious Jam during the [Constellation Festival](http://www.kubilai-khan-constellations.com/ "Festival Constellation") in the [Refuge Entre Deux Eaux](https://www.refugeentredeuxeaux.com) mountain lodge kitchen. The clarinet is played by [Bennoit Bottex](http://benoitbottex.fr/) and the drums are played by [Martial Frenzel](http://martialovitch.tumblr.com/).
