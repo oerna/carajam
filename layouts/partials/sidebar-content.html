@@ -1,7 +1,7 @@
 
 	<div class="sidebar-content">
 
-		<a href="{{ .Site.BaseURL }}"><h1>#{{ .Site.Title }}</h1></a>
+		<div class="clogo"><a href="{{ .Site.BaseURL }}"><h1>#{{ .Site.Title }}</h1></a></div>
 		<small><p>{{ .Site.Params.sidebarDescription }}</p></small>
 
 		{{ if .Site.Params.sidebarFreeText }}
@@ -9,9 +9,9 @@
 			<small><p>{{ .Site.Params.sidebarFreeText }}</p></small>
 		</div>
 		{{ end }}
-        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <!-- <i class="fa fa-twitter" aria-hidden="true"></i>
         <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube" aria-hidden="true"></i>
+        <i class="fa fa-youtube" aria-hidden="true"></i> -->
         <i class="fa fa-instagram" aria-hidden="true"></i>
 
 
@@ -23,9 +23,12 @@
 		</ul>
 
 		<div class="sidebar-recent hidden-xs">
+            <small>Recent Jams:</small>
+            <ul>
 				{{ range first 5 .Site.Pages }}
-				<a href="{{.Permalink}}">{{ .Title }}</a>
+                <li><a href="{{.Permalink}}">{{ .Title }}</a></li>
 				{{ end }}	
+            </ul>    
 		</div>
 
 		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&#9835; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
