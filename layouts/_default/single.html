@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-md-3 col-lg-3 sidebar">
+
+			{{ partial "sidebar-content.html" . }}
+
+			</div>
+			<div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
+
+				<div class="post">
+
+					<div class="post-heading">
+						<h1><a href="">{{ .Title }} &#9834;</a></h1>
+                        <sup><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>{{ .Date.Format .Site.Params.DateFormat }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}&emsp;&emsp;<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            <a target="_blank" href="{{ .Params.locationlink }}">{{ .Params.location }}</a>&emsp;&emsp;<span class="glyphicon glyphicon-tag" aria-hidden="true"></span>&ensp;{{ range .Params.tags }}<a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>&ensp;{{ end }}
+						</sup>
+					</div>
+
+					{{ .Content }}
+                    &mdash;
+				</div>
+
+			</div>
+			<div class="col-sm-1 col-md-3 col-md-4">
+			</div>
+		</div>
+	</div>
+
+{{ partial "footer.html" . }}
